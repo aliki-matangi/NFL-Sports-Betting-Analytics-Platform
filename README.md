@@ -40,8 +40,6 @@ Stores weather station data used to analyze environmental impacts on game outcom
 
 The ERD below illustrates the relationships between customer, betting, game, team, stadium, and weather data. The schema was designed using primary and foreign key constraints to maintain referential integrity while supporting complex analytical queries.
 
-![NFL Sports Betting Analytics Platform ERD](images/ERD.png)
-
 ### Key Relationships
 
 * A Customer can place many Bets.
@@ -83,36 +81,6 @@ The ERD below illustrates the relationships between customer, betting, game, tea
 | Analytics               | SQL              |
 | Statistical Modeling    | StatsModels      |
 | Development Environment | Jupyter Notebook |
-
----
-
-## Database Architecture
-
-The database consists of six primary entities:
-
-### Customer
-
-Stores customer demographic and account information.
-
-### Bet
-
-Captures wagering activity, betting outcomes, and commission calculations.
-
-### Game
-
-Contains NFL game details including teams, scores, and outcomes.
-
-### Team
-
-Stores team-level information used for game and betting analysis.
-
-### Stadium
-
-Maintains venue information and stadium characteristics.
-
-### Station
-
-Stores weather station data used to evaluate environmental impacts on games.
 
 ---
 
