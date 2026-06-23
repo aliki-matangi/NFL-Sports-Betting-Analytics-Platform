@@ -10,7 +10,7 @@ This project demonstrates database design, ETL development, SQL analytics, and s
 
 ### Entity Relationship Diagram
 
-![ERD](images/ERD.png)
+![NFL Sports Betting Analytics Platform ERD](ERD.png)
 
 ---
 
