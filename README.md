@@ -8,9 +8,57 @@ This project demonstrates database design, ETL development, SQL analytics, and s
 
 ---
 
-### Entity Relationship Diagram
+## Database Architecture
 
-![NFL Sports Betting Analytics Platform ERD](ERD.png)
+The database consists of six primary entities that support sportsbook operations and analytics:
+
+### Customer
+
+Stores customer demographic and account information.
+
+### Bet
+
+Captures wagering activity, betting outcomes, and commission calculations.
+
+### Game
+
+Contains NFL game details including teams, scores, betting lines, and outcomes.
+
+### Team
+
+Stores NFL team metadata used for game and betting analysis.
+
+### Stadium
+
+Maintains venue information including capacity, surface type, and location.
+
+### Station
+
+Stores weather station data used to analyze environmental impacts on game outcomes.
+
+## Entity Relationship Diagram (ERD)
+
+The ERD below illustrates the relationships between customer, betting, game, team, stadium, and weather data. The schema was designed using primary and foreign key constraints to maintain referential integrity while supporting complex analytical queries.
+
+![NFL Sports Betting Analytics Platform ERD](images/ERD.png)
+
+### Key Relationships
+
+* A Customer can place many Bets.
+* Each Bet is associated with a single Game.
+* A Game references Home, Away, and Favorite Teams.
+* Games are played at a Stadium.
+* Each Stadium is linked to a Weather Station.
+* Team and weather data can be joined to betting activity for advanced analytics and predictive modeling.
+
+### Analytics Enabled by This Design
+
+* Customer profitability analysis
+* Betting performance tracking
+* Team-level betting trends
+* Weather impact analysis
+* Stadium and venue performance analysis
+* Sportsbook commission reporting
 
 ---
 
